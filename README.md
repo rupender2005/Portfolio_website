@@ -1,16 +1,33 @@
-# React + Vite
+# 🚀 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio built with **React** and **Vite**. This project showcases my skills, education, and the various web development projects I've worked on.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Styling:** CSS3 / Tailwind CSS
+- **Icons:** Lucide-React / FontAwesome (Adjust based on what you used)
+- **Deployment:** [Vercel/Netlify/GitHub Pages]
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop screens.
+- **Project Showcase:** Highlights my best work with descriptions and links.
+- **Skill Visualization:** A dedicated section for my technical expertise.
+- **Contact Form:** Integrated form for direct communication.
+- **Fast Performance:** Optimized using Vite's fast build process.
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+├── public/           # Static assets
+├── src/
+│   ├── assets/       # Images and SVGs
+│   ├── components/   # Reusable UI components (Navbar, Hero, etc.)
+│   ├── App.jsx       # Main application component
+│   ├── index.css     # Global styles
+│   └── main.jsx      # Entry point
+├── .gitignore        # Files to ignore in Git
+├── index.html        # HTML template
+└── package.json      # Dependencies and scripts
