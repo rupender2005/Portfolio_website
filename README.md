@@ -21,13 +21,24 @@ A modern, responsive personal portfolio built with **React** and **Vite**. This 
 ## 📂 Project Structure
 
 ```text
-├── public/           # Static assets
-├── src/
-│   ├── assets/       # Images and SVGs
-│   ├── components/   # Reusable UI components (Navbar, Hero, etc.)
-│   ├── App.jsx       # Main application component
-│   ├── index.css     # Global styles
-│   └── main.jsx      # Entry point
-├── .gitignore        # Files to ignore in Git
-├── index.html        # HTML template
-└── package.json      # Dependencies and scripts
+your-empty-folder/
+├── node_modules/       
+├── public/             
+├── index.html          
+├── package.json       
+├── vite.config.js      
+└── src/                
+    ├── assets/         
+    ├── components/     
+    │   ├── Navbar.jsx  
+    │   ├── Hero.jsx    
+    │   ├── About.jsx   
+    │   ├── Skills.jsx  
+    │   ├── Projects.jsx# 
+    │   ├── Education.jsx 
+    │   ├── Contact.jsx 
+    │   └── Footer.jsx  
+    ├── App.jsx         
+    ├── index.css       
+    ├── main.jsx        
+    └── App.css         
