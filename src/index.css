@@ -1,0 +1,96 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+body { background: #09090b; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #09090b; }
+::-webkit-scrollbar-thumb { background: #d97706; border-radius: 2px; }
+
+/* Typography & Links */
+.nav-link { color: #a1a1aa; text-decoration: none; font-size: 13px; transition: color .2s; cursor: pointer; }
+.nav-link:hover { color: #d97706; }
+.nav-link:focus-visible { outline: 2px solid #d97706; outline-offset: 3px; border-radius: 2px; }
+
+/* Navbar — mobile menu */
+.site-nav {
+  padding: 14px clamp(16px, 4vw, 40px);
+}
+
+.navbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+.navbar-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.navbar-end {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid #27272a;
+  border-radius: 6px;
+  background: #18181b;
+  color: #a1a1aa;
+  cursor: pointer;
+  transition: border-color .2s, color .2s;
+}
+.navbar-burger:hover {
+  border-color: #d97706;
+  color: #d97706;
+}
+.navbar-burger:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+@media (max-width: 768px) {
+  .navbar-links:not(.is-open) {
+    display: none;
+  }
+  .navbar-links.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    order: 3;
+    padding-top: 14px;
+    border-top: 1px solid #18181b;
+  }
+  .navbar-burger {
+    display: inline-flex;
+  }
+}
+.slabel { color: #d97706; font-size: 12px; font-family: 'Courier New', monospace; letter-spacing: .1em; margin-bottom: 6px; }
+
+/* Buttons */
+.btn-primary { background: #d97706; color: #09090b; padding: 10px 22px; border-radius: 6px; font-weight: 700; font-size: 13px; text-decoration: none; transition: background .2s; cursor: pointer; border: none; display: inline-block; }
+.btn-primary:hover { background: #f59e0b; }
+
+.btn-outline { border: 1px solid #3f3f46; color: #a1a1aa; padding: 10px 22px; border-radius: 6px; font-size: 13px; text-decoration: none; transition: all .2s; cursor: pointer; background: transparent; display: inline-block; }
+.btn-outline:hover { border-color: #d97706; color: #d97706; }
+
+/* Components */
+.chip { background: #18181b; border: 1px solid #27272a; padding: 5px 13px; border-radius: 20px; font-size: 12px; color: #a1a1aa; display: inline-block; cursor: default; }
+
+.pcard { background: #111113; border: 1px solid #27272a; border-radius: 12px; padding: 22px; transition: border-color .2s; }
+.pcard:hover { border-color: #d97706; } /* Removed the transform line here! */
+
+.ttag { background: #1c1917; color: #d97706; border: 1px solid #292524; padding: 3px 9px; border-radius: 4px; font-size: 11px; font-family: 'Courier New', monospace; }
